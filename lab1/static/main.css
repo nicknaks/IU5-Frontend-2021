@@ -55,8 +55,10 @@ input[type=text], input[type=password] {
     text-align: center;
 }
 .images {
+    /*display: block;*/
     display: block;
     margin: 0 auto;
+
 }
 .texts {
     text-align: justify;
@@ -77,6 +79,8 @@ input[type=text], input[type=password] {
     background: blue;
     margin-right: 10px;
     margin-bottom: 10px;
+    width:360px;
+    height:195px;
 }
 
 .select_custom{
@@ -106,6 +110,16 @@ input[type=text], input[type=password] {
     border-collapse: collapse;
     background: #252F48;
     margin: auto;
+}
+
+div.container {
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+img {
+    width: 100%;
+    height: auto;
 }
 
 .table_custom thead {
