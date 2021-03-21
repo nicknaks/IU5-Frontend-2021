@@ -29,6 +29,3 @@ function getAnagramms(arr) {
 }
 
 module.exports = getAnagramms;
-
-
-console.log(getAnagramms(['мир', 'Рим', 'сирота', 'Ариост', 'мри', 'пва', 'лор', 'авп']))
