@@ -17,7 +17,19 @@
 */
 
 function get1DArray(arr) {
-    //code here
+  let res = []
+
+  while (arr.length) {
+    let next = arr.pop()
+
+    if (Array.isArray(next)) {
+      arr.push(...next)
+    } else {
+      res.push(next)
+    }
+  }
+
+  return res.reverse()
 }
 
 module.exports = get1DArray;

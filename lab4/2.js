@@ -7,7 +7,13 @@
  * "тот" -> true
  */
 function isPalindrome(str) {
-    //code here
+  for (let index = 0; index < str.length; index++) {
+    if (str[index] !== str[str.length - 1 - index]) {
+      return false
+    }
+  }
+
+  return true
 }
 
 module.exports = isPalindrome;

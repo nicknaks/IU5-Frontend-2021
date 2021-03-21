@@ -8,7 +8,28 @@
  */
 
 function rle(str) {
-    //code here
+  let char = str[0], count = 1
+  let res = ""
+  for (let i = 1; i < str.length; i++) {
+    if (str[i] === char) {
+      count++
+    } else {
+      res += char
+      if (count !== 1) {
+        res += count
+      }
+
+      count = 1
+      char = str[i]
+    }
+  }
+
+  res += char
+  if (count !== 1) {
+    res += count
+  }
+
+  return res
 }
 
 module.exports = rle;
