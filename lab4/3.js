@@ -8,6 +8,10 @@
  */
 
 function rle(str) {
+  if (str === "") {
+    return ""
+  }
+
   let char = str[0], count = 1
   let res = ""
   for (let i = 1; i < str.length; i++) {
